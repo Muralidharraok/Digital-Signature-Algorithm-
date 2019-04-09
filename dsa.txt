@@ -1,0 +1,27 @@
+dsa.generate(key length) returns key object 
+key length is bits (1024, 2048,3072)
+
+Variables:	
+
+    p (integer) – DSA modulus
+    q (integer) – Order of the subgroup
+    g (integer) – Generator
+    y (integer) – Public key
+    x (integer) – Private key
+
+
+p,q,g are domain parameters
+key.domain() will return all p,q and g values
+
+DSS - Digital Signature Standard
+DSS.new(key,mode)
+fips-186-3
+
+
+class:
+DSS_SigScheme
+This signature scheme can perform DSS signature or verification.
+
+new(key, mode, encoding='binary', randfunc=None)
+Return a signature scheme object DSS_SigScheme that can be used to perform DSS signature or verification.
+
